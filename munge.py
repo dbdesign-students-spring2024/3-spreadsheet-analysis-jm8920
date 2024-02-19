@@ -33,8 +33,8 @@ with open(output_file_path, mode='w', newline='', encoding='utf-8') as outfile:
         # Calculate new values
         not_fully = student - stu_fully
         never_vaccinated = student - stu_onedose
-        percent_not_fully = (not_fully / student) * 100 if student > 0 else 0
-        percent_never = (never_vaccinated / student) * 100 if student > 0 else 0
+        percent_not_fully = (not_fully / student) if student > 0 else 0
+        percent_never = (never_vaccinated / student) if student > 0 else 0
         
         # Format percentages to three decimal places
         percent_not_fully_formatted = f"{percent_not_fully:.3f}"
