@@ -58,9 +58,9 @@ percent_not_fully_formatted = f"{percent_not_fully:.3f}"
 ```
 
 Links to data files:
-*[The original raw data](data/raw_data.csv)
++[The original raw data](data/raw_data.csv)
 *[The munged data](data/clean_data.csv) 
-*[The spreadsheet file](data/clean_data.xlsx)
+-[The spreadsheet file](data/clean_data.xlsx)
 
 ## Analysis
 ### Average and Sum of students
