@@ -2,9 +2,8 @@
 ## Data set details
 
 ### The origin of the data set 
-I found the dataset "Student COVID Vaccinations (3-24-2022)" from NYC Open Data website, which is provided By New York City Department of Education. 
-[Link to dataset](https://data.cityofnewyork.us/Education/Student-COVID-Vaccinations-3-24-2022-/q5xz-reje/data_preview)
-This dataset collects the number and percentage of New York City students who have taken the covid vaccine (w/ at least one dose & fully vaccinated). The original data file was in CSV.
+I found the dataset "Student COVID Vaccinations (3-24-2022)" from NYC Open Data website, which is provided By New York City Department of Education. \[Link to dataset](https://data.cityofnewyork.us/Education/Student-COVID-Vaccinations-3-24-2022-/q5xz-reje/data_preview)
+\This dataset collects the number and percentage of New York City students who have taken the covid vaccine (w/ at least one dose & fully vaccinated). The original data file was in CSV.
 
 ### The first 20 rows of the the raw data
 | School DBN | # of students over five active on register | # of students w/ at least one dose | % w/ at least one dose | # of students fully vaccinated | % fully vaccinated |
@@ -28,7 +27,6 @@ This dataset collects the number and percentage of New York City students who ha
 | 01M363     | 221                                        | 178                                | 0.805                  | 156                            | 0.706              |
 | 01M364     | 219                                        | 125                                | 0.571                  | 111                            | 0.507              |
 | 01M378     | 170                                        | 107                                | 0.629                  | 90                             | 0.529              |
-
 
 
 Describe the problems that were present in the data and the scrubbing tasks that were necessary to prepare your data set for import into a spreadsheet - include scrubbing done in Python, a text editor, or any other tool. Be specific with examples of the problems in the original data and the way in which those were solved. Feel free to show small snippets of relevant code - see the examples of code "syntax highlighting" in the Markdown guide linked above.
