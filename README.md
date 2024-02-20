@@ -3,7 +3,8 @@
 
 ### The origin of the data set 
 I found the dataset "Student COVID Vaccinations (3-24-2022)" from NYC Open Data website, which is provided By New York City Department of Education. 
-[Link to the dataset: Student COVID Vaccinations (3-24-2022)](https://data.cityofnewyork.us/Education/Student-COVID-Vaccinations-3-24-2022-/q5xz-reje/data_preview)
+[Link to the dataset: Student COVID Vaccinations (3-24-2022).](https://data.cityofnewyork.us/Education/Student-COVID-Vaccinations-3-24-2022-/q5xz-reje/data_preview)
+
 This dataset contains information about vaccination in schools, including columns for the school DBN (District Borough Number), the number of students over five active on register, the number of students with at least one dose, the percentage with at least one dose, the number of students fully vaccinated, and the percentage fully vaccinated. The original data file was in CSV.
 
 ### The first 20 rows of the the raw data
@@ -80,8 +81,10 @@ I use `MAXIFS()` and `MINIFS()` to calculate Maximum / Minimum Number of Never V
 ### Data Visualization
 ![pie](images/pie.png)
 Vaccination Status Comparison: Here is a pie chart which compares the overall number of students fully vaccinated, not fully vaccinated, and never vaccinated, and we can also find the percentage of each component in the total number of students. We can find that the percentage of sum of students fully vaccinated has the largest share (38%), the percentage of sum of students never vaccinated has the smallest share (28%). But the percentages for the three components are very close. It shows the insight that NYC schools have a good rate of fully student vaccinations, but there are still many students never vaccinated who need attention.
+
 ![histogram1](images/histogram1.png)
 This histogram shows the distribution of vaccination rates (% w/ at least one dose) across NYC schools. This visualization helps identify the general trend of students with at least one dose, indicating the vaccination rate in most schools is between 30% and 70%.
+
 ![histogram2](images/histogram2.png)
 This histogram shows the distribution of vaccination rates (% fully vaccinated) across NYC schools. It shows how many schools fall into various ranges of vaccination coverage. This visualization helps identify the general trend in vaccination rates, indicating fully vaccination rate in most schools is between 20% and 70%.
 

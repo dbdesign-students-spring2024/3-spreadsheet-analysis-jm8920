@@ -1,4 +1,4 @@
-# place your code to clean up the data file below.
+# Place your code to clean up the data file below.
 
 import csv
 
