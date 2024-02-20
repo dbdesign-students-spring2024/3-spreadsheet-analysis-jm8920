@@ -93,3 +93,6 @@ This histogram shows the distribution of vaccination rates (% fully vaccinated) 
 + The percentages being close for fully vaccinated, not fully vaccinated, and never vaccinated students suggest a somewhat evenly distributed vaccination status. This indicates that while progress has been made in vaccination efforts, there is still considerable work to be done to achieve higher levels of immunity within the school populations.
 + The size of the school does not significantly influence the vaccination rates, suggesting that factors other than size are more critical in determining the success of vaccination campaigns.
 + The highest vaccination rate observed is 93.2%，and the lowest vaccination rate is only 10.5% of students fully vaccinated. The wide range of vaccination rates points to potential disparities in public health outreach, access to vaccines, or community attitudes towards vaccination.
+
+## Extra-credit
+This assignment deserves extra credit because this dataset currently contains more than 1500 rows, and the code is capable of retrieving thousands of rows for future updates on the dataset.
