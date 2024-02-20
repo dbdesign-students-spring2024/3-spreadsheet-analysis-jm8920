@@ -47,10 +47,11 @@ Firstly, the raw data only provide data of the number & percentage of students w
 ```
 Here is the calculation process of new values:
 ```
+        # Calculate new values
         not_fully = student - stu_fully
         never_vaccinated = student - stu_onedose
-        percent_not_fully = (not_fully / student) * 100 if student > 0 else 0
-        percent_never = (never_vaccinated / student) * 100 if student > 0 else 0
+        percent_not_fully = (not_fully / student) if student > 0 else 0
+        percent_never = (never_vaccinated / student) if student > 0 else 0
 ```
 Next, I format percentages to three decimal places，making original and newly calculated data display in a uniform way.
 ```

@@ -6,12 +6,12 @@ input_file_path = 'data/raw_data.csv'
 output_file_path = 'data/clean_data.csv'
 
 # Open and read the input file
-with open(input_file_path, mode='r', newline='', encoding='utf-8') as infile:
+with open(input_file_path, mode='r', newline='') as infile:
     reader = csv.reader(infile)
     rows = [row for row in reader]
 
 # Write to the output file
-with open(output_file_path, mode='w', newline='', encoding='utf-8') as outfile:
+with open(output_file_path, mode='w', newline='') as outfile:
     writer = csv.writer(outfile)
     
     # Add new column titles
