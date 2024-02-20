@@ -3,7 +3,7 @@
 
 ### The origin of the data set 
 I found the dataset "Student COVID Vaccinations (3-24-2022)" from NYC Open Data website, which is provided By New York City Department of Education. 
-[Link to the dataset:Student COVID Vaccinations (3-24-2022)](https://data.cityofnewyork.us/Education/Student-COVID-Vaccinations-3-24-2022-/q5xz-reje/data_preview)
+[Link to the dataset: Student COVID Vaccinations (3-24-2022)](https://data.cityofnewyork.us/Education/Student-COVID-Vaccinations-3-24-2022-/q5xz-reje/data_preview)
 This dataset contains information about vaccination in schools, including columns for the school DBN (District Borough Number), the number of students over five active on register, the number of students with at least one dose, the percentage with at least one dose, the number of students fully vaccinated, and the percentage fully vaccinated. The original data file was in CSV.
 
 ### The first 20 rows of the the raw data
@@ -58,9 +58,9 @@ percent_not_fully_formatted = f"{percent_not_fully:.3f}"
 ```
 
 Links to data files:
-+[The original raw data](data/raw_data.csv)
-*[The munged data](data/clean_data.csv) 
--[The spreadsheet file](data/clean_data.xlsx)
+- [The original raw data](data/raw_data.csv)
+* [The munged data](data/clean_data.csv) 
++ [The spreadsheet file](data/clean_data.xlsx)
 
 ## Analysis
 ### Average and Sum of students
@@ -68,7 +68,7 @@ I use `AVERAGE()` to calculate the Average of Total Students/School. This repres
 
 I use `SUM()` to calculate the Sum of Students Not Fully Vaccinated, Sum of Students Never Vaccinated, and Sum of Students Fully Vaccinated. These data can be summarized and compared to give a general picture of student vaccinations.
 
-I use `AVERAGEIF()`to calculate the Average Total Students in Schools with More Than 50% Fully Vaccinated / 50% Never Vaccinated. This data helps to analyze whether vaccination rates are correlated with school size.
+I use `AVERAGEIF()`to calculate the Average Total Students in Schools with More Than 50% Fully Vaccinated / 50% Never Vaccinated. This data helps to analyze whether vaccination rates are correlated with school size. We can find that the average number of students in schools where more than 50% have never been vaccinated is 532.8, which is close to the overall average, suggesting that the issue of students remaining unvaccinated is widespread and not confined to schools of a specific size.
 
 I use `SUMIF()` to calculate the Sum of Total Students for Schools with More Than 30% Never Vaccinated / Fully vaccinated. If we take 30% as a standard, a vaccination rate greater than 70% is considered excellent and less than 30% is considered in need of more attention，this two data can clearly shows the reach of successful vaccination programs.
 
@@ -84,3 +84,8 @@ Vaccination Status Comparison: Here is a pie chart which compares the overall nu
 This histogram shows the distribution of vaccination rates (% w/ at least one dose) across NYC schools. This visualization helps identify the general trend of students with at least one dose, indicating the vaccination rate in most schools is between 30% and 70%.
 ![histogram2](images/histogram2.png)
 This histogram shows the distribution of vaccination rates (% fully vaccinated) across NYC schools. It shows how many schools fall into various ranges of vaccination coverage. This visualization helps identify the general trend in vaccination rates, indicating fully vaccination rate in most schools is between 20% and 70%.
+
+### Some Insights
++ The percentages being close for fully vaccinated, not fully vaccinated, and never vaccinated students suggest a somewhat evenly distributed vaccination status. This indicates that while progress has been made in vaccination efforts, there is still considerable work to be done to achieve higher levels of immunity within the school populations.
++ The size of the school does not significantly influence the vaccination rates, suggesting that factors other than size are more critical in determining the success of vaccination campaigns.
++ The highest vaccination rate observed is 93.2%，and the lowest vaccination rate is only 10.5% of students fully vaccinated. The wide range of vaccination rates points to potential disparities in public health outreach, access to vaccines, or community attitudes towards vaccination.
